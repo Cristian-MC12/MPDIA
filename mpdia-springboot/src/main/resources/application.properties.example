@@ -1,6 +1,11 @@
 # ============================================================
 # MPDIA — Spring Boot Backend Configuration
 # ============================================================
+# INSTRUCCIONES:
+# 1. Copia este archivo como "application.properties"
+# 2. Reemplaza los valores de ejemplo con tus configuraciones reales
+# 3. NUNCA subas application.properties a Git (ya está en .gitignore)
+# ============================================================
 
 # Server
 server.port=8080
@@ -30,7 +35,8 @@ mpdia.jwt.expiration-ms=86400000
 mpdia.cors.allowed-origins=http://localhost:4200
 
 # Gemini AI
-mpdia.gemini.api-key=AIzaSyDY2ETq7ULPnzFW-qrlA3waWmgZCfZbu9k
+# Obtén tu API key en: https://aistudio.google.com/app/apikey
+mpdia.gemini.api-key=TU_API_KEY_DE_GEMINI_AQUI
 mpdia.gemini.api-url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
 
 # Logging
@@ -40,8 +46,8 @@ logging.level.org.springframework.security=INFO
 # Email (Gmail SMTP) — configurar contraseña de app real antes de usar invitaciones por email
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=sm0130109@gmail.com
-spring.mail.password=your-app-password-here
+spring.mail.username=tu-email@gmail.com
+spring.mail.password=tu-password-de-app-aqui
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 spring.mail.properties.mail.smtp.connectiontimeout=3000
